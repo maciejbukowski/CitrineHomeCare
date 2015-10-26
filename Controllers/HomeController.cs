@@ -13,7 +13,7 @@ namespace CitrineHomeHealth.Controllers
             return View();
         }
 
-        public ActionResult HowWeHelp()
+        public ActionResult Services()
         {
             return View();
         }
@@ -23,7 +23,7 @@ namespace CitrineHomeHealth.Controllers
             return View();
         }
 
-        public ActionResult OurTeam()
+        public ActionResult Team()
         {
             return View();
         }

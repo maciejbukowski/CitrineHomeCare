@@ -6,9 +6,10 @@
     <title>@ViewBag.Title - Citrine Home Care</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
 </head>
+
 <body>
+
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -19,28 +20,91 @@
                 </button>
                 @Html.ActionLink("Citrine Home Care", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("How We Help", "HowWeHelp", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Our Team", "OurTeam", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
+                <div class="navbar-collapse collapse">
+
+                    <ul class="nav navbar-nav pagination-lg">
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Our Services", "Services", "Home")</li>
+                        <li>@Html.ActionLink("Our Team", "Team", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
         </div>
     </div>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Citrine Home Care</p>
+         
+        <footer>       
+            <div class="row">
+                <div class="col-md-3">
+                    <h5><b>Quick Links</b></h5>
+                    @Html.ActionLink("For Our Employees", "Edit")<br />
+                    @Html.ActionLink("Partner Portal", "Edit")<br />
+                    @Html.ActionLink("Privacy Policy", "Edit")<br />
+                    @Html.ActionLink("Quick Links", "Edit")<br />
+                    @Html.ActionLink("Contact Us", "Edit")<br />
+                    <br />
+                </div>
+                <div class="col-md-3">
+                    <h5><b>Specialty Practices</b></h5>
+                    @Html.ActionLink("Home Health Care", "Edit")<br />
+                    @Html.ActionLink("Hospice", "Edit")<br />
+                    @Html.ActionLink("Habilitation", "Edit")<br />
+                    @Html.ActionLink("Primary Care at Home", "Edit")<br />
+                    <h5><b>Frequently Visited</b></h5>
+                    @Html.ActionLink("Careers", "Edit")<br />
+                    @Html.ActionLink("Find an Office", "Edit")<br />
+                    @Html.ActionLink("FAQs", "Edit")<br />
+                </div>
+                
+                <div class="col-md-3">
+                    <h5><b>International</b></h5>
+                    @Html.ActionLink("South America", "Edit")<br />
+                    @Html.ActionLink("Europe", "Edit")<br />
+                    <br />
+                    <h5><b>Partnerships</b></h5>
+                    @Html.ActionLink("Suzanne G Komen", "Edit")<br />
+                    @Html.ActionLink("ALS", "Edit")<br />
+                    @Html.ActionLink("American Diabetes Association", "Edit")<br />
+
+                </div>
+                <div class="col-md-3">
+                    <h5><b>Blogs</b></h5>
+                    @Html.ActionLink("Citrine Cares", "Edit")<br />
+                    @Html.ActionLink("Citrine News", "Edit")<br />
+                    <br />
+                    <h5><b>Follow us on Facebook</b></h5>
+                    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="100" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+
+                </div>
+
+
+            </div>
+            <hr />
+            <div class="row">
+                <p>&copy; @DateTime.Now.Year - Citrine Home Care</p>
+            </div>
+
         </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
+
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.5";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
 </body>
 </html>
