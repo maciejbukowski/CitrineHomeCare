@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,6 +26,7 @@
                         <li>@Html.ActionLink("About", "About", "Home")</li>
                         <li>@Html.ActionLink("Our Services", "Services", "Home")</li>
                         <li>@Html.ActionLink("Our Team", "Team", "Home")</li>
+                        <li>@Html.ActionLink("Careers", "Careers", "Home")</li>
                         <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     </ul>
                     @Html.Partial("_LoginPartial")
@@ -92,6 +93,7 @@
     </div>
 
     @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/angular.min.js"></script>
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 

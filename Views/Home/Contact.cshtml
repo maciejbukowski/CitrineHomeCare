@@ -4,22 +4,34 @@
 <h2>@ViewBag.Title</h2>
 <h3>@ViewBag.Message</h3>
 
-<br /><br />
-    <address><strong>
-    3xxx W Peterson Ave<br />
-    Chicago Illinois 60618<br />
-    <abbr title="Phone">P:</abbr>
-    773.555.0000
-    </strong></address>
+
+<div class="row">
+    <div class="col-lg-3">
+        <address>
+            <strong>
+                3xxx W Peterson Ave<br />
+                Chicago Illinois 60618<br />
+                <abbr title="Phone">P:</abbr>
+                773.555.0000
+            </strong>
+        </address>
+        <address>
+            <strong>Email us at: </strong>   <a href="mailto:Support@example.com">help@citrinehomecare.com</a><br />
+        </address>
+    </div>
+
+    <div class="col-lg-9">
+        <div class="jumbotron">
+            <p class="center-block"> We are open 8am to 5pm | Monday to Friday. <span class="glyphicon glyphicon-road"></span> See you soon!</p>
+        </div>
+    </div>
+</div>
 
 
-<address>
-    <strong>Email us at: </strong>   <a href="mailto:Support@example.com">help@citrinehomecare.com</a><br />
-</address><br />
 
 
 <center>
-    <div id="map-canvas" style="width: 600px; height: 300px;">
+    <div id="map-canvas" style="width: 1000px; height: 300px;">
     </div>
 </center>
 

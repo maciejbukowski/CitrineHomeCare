@@ -1,0 +1,63 @@
+﻿@model CitrineHomeHealth.Models.Applicant
+
+@{
+    ViewBag.Title = "Careers";
+}
+@section scripts{
+    <script src="~/Scripts/jquery.validate.min.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+}
+
+
+<!---------------------------------------------------------------------------------------------------------------->
+
+<form class="form-horizontal">
+    <fieldset>
+
+        <!-- Form Name -->
+        <legend>Form Name</legend>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Name</label>
+            <div class="col-md-4">
+                <input id="Name" name="Name" type="text" placeholder="Jane Doe" class="form-control input-md" required="">
+                <span class="help-block">Please enter your name.</span>
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Email</label>
+            <div class="col-md-4">
+                <input id="Email" name="Email" type="text" placeholder="janedoe@email.com" class="form-control input-md" required="">
+                <span class="help-block">Please enter your email.</span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="textinput">Telephone</label>
+            <div class="col-md-4">
+                <input id="Phone" name="Phone" type="text" class="form-control input-md" required="">
+                <span class="help-block">Please enter your telephone number.</span>
+            </div>
+        </div>
+
+        <!-- File Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="filebutton">Resume</label>
+            <div class="col-md-4">
+                <input id="fileUpload" name="fileUpload" class="input-file" type="file">
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="singlebutton"></label>
+            <div class="col-md-4">
+                <button id="singlebutton" name="singlebutton" class="btn btn-success">Send</button>
+            </div>
+        </div>
+
+    </fieldset>
+</form>

@@ -2,48 +2,50 @@
     ViewBag.Title = "Home Page";
 }
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <!-- Overlay -->
+    <div class="overlay"></div>
 
+    <!-- Indicators -->
     <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#bs-carousel" data-slide-to="1"></li>
+        <li data-target="#bs-carousel" data-slide-to="2"></li>
     </ol>
 
-
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <img src="~/fonts/Images/bigstock-Nursing-Home-Care-11536319.jpg" alt="Chania">
-            <div class="carousel-caption">
-                <p>We Focus On The Individual's Needs.</p>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item slides active">
+            <div class="slide-1"></div>
+            <div class="hero">
+                <hgroup>
+                    <h1>Your Health, Guaranteed</h1>
+                    <h3>Because those around you matter most.</h3>
+                </hgroup>
+                <button class="btn btn-hero btn-lg" role="button">See all benefits</button>
             </div>
         </div>
-
-        <div class="item">
-            <img src="~/fonts/Images/bigstock-nurse-helps-elderly-woman-at-b-25297304.jpg" alt="Chania" />
-            <div class="carousel-caption">
-                <p>We Have Left Many Customers Satisfied.</p>
+        <div class="item slides">
+            <div class="slide-2"></div>
+            <div class="hero">
+                <hgroup>
+                    <h1>Compassion</h1>
+                    <h3>One step toward confidence</h3>
+                </hgroup>
+                <button class="btn btn-hero btn-lg" role="button">See all benefits</button>
             </div>
         </div>
-
-        <div class="item">
-            <img src="~/fonts/Images/bigstock-elderly-and-nurse-or-carer-25600913.jpg" alt="Chania" />
-            <div class="carousel-caption">
-                <p>Our Team Dedicates High Quality Care.</p>
+        <div class="item slides">
+            <div class="slide-3"></div>
+            <div class="hero">
+                <hgroup>
+                    <h1>You are amazing</h1>
+                    <h3>Therefore you deserve the best.</h3>
+                </hgroup>
+                <button class="btn btn-hero btn-lg" role="button">See all benefits</button>
             </div>
         </div>
     </div>
-
-
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-
 </div>
 
 
@@ -94,7 +96,6 @@
 
     </div>
 </section>
-
 
 
 
@@ -153,6 +154,7 @@
                     </div>
                 </div>
             </div>
+        </div>
 
     </section>
 </div>

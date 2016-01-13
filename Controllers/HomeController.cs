@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CitrineHomeHealth.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -26,6 +27,17 @@ namespace CitrineHomeHealth.Controllers
         public ActionResult Team()
         {
             return View();
+        }
+        public ActionResult Careers()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Careers(Applicant applicant)
+        {
+
+            return Redirect("Index");
         }
 
         public ActionResult Contact()
